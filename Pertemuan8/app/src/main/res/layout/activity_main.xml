@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Dua Angka"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/edit_bil1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/edit_bil2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="24sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_tambah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="tambah"
+            android:text="+"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btn_kurang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/btn_tambah"
+            android:onClick="kurang"
+            android:text="-"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btn_kali"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btn_bagi"
+            android:onClick="kali"
+            android:text="x"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btn_bagi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:onClick="bagi"
+            android:text="/"
+            android:textAlignment="center" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_bersih"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clear"
+        android:text="CLEAR" />
+
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HASIL"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/label_hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+</LinearLayout>
