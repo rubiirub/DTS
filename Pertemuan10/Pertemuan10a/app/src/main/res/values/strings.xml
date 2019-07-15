@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Pertemuan10</string>
+    <string name="btn1">BUAT FILE</string>
+    <string name="btn2">UBAH FILE</string>
+    <string name="btn3">BACA FILE</string>
+    <string name="btn4">HAPUS FILE</string>
+    <string name="lbl1">Text View</string>
+</resources>
